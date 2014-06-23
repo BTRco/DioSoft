@@ -4,12 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person bogdan = new Person("Bogdan", "Kyiv", 23, Post.DIRECTOR);
-        Person bogdan1 = new Person("Bogdan", "Kharkiv", 23, Post.DIRECTOR);
-        Person bogdan2 = new Person("Bogdan Skochynskyi", "Kyiv", 23, Post.DIRECTOR);
-        Person bogdan3 = new Person("Bogdan", "Kyiv", 23, Post.QA);
-        Person bogdan4 = new Person("Bogdan", "Kyiv", 24, Post.DIRECTOR);
-        Person bogdan5 = new Person("Bogdan", "Kyiv", 23, Post.DIRECTOR);
+        Person bogdan = new Person("Bogdan", "Kyiv", 23, Post.DIRECTOR);                //Create new Perosn class object
+        Person bogdan1 = new Person("Bogdan", "Kharkiv", 23, Post.DIRECTOR);            //Create new Perosn class object
+        Person bogdan2 = new Person("Bogdan Skochynskyi", "Kyiv", 23, Post.DIRECTOR);   //Create new Perosn class object
+        Person bogdan3 = new Person("Bogdan", "Kyiv", 23, Post.QA);                     //Create new Perosn class object
+        Person bogdan4 = new Person("Bogdan", "Kyiv", 24, Post.DIRECTOR);               //Create new Perosn class object
+        Person bogdan5 = new Person("Bogdan", "Kyiv", 23, Post.DIRECTOR);               //Create new Perosn class object
 
         System.out.println(bogdan.equals(bogdan1)); //Check equals false by String "Address"
         System.out.println(bogdan.equals(bogdan2)); //Check equals false by String "Name"
@@ -23,47 +23,47 @@ public class Main {
         System.out.println(bogdan == bogdan);       //Check the same objects by ==
         System.out.println(" ");
 
-        System.out.println(bogdan.hashCode());
-        System.out.println(bogdan2.hashCode());
-        System.out.println(bogdan5.hashCode());
+        System.out.println(bogdan.hashCode());      //Create and output hashCode for bogdan
+        System.out.println(bogdan2.hashCode());     //Create and output hashCode for bogdan2
+        System.out.println(bogdan5.hashCode());     //Create and output hashCode for bogdan3
         System.out.println(" ");
 
-        Company company = new Company();
-        Company company1 = new Company();
+        Company company = new Company();            //Create new Company(array) object
+        Company company1 = new Company();           //Create new Company(array) object
 
 
 
-        company.addToArray(bogdan);
-        company.addToArray(bogdan1);
-        company.addToArray(bogdan2);
-        company.addToArray(bogdan3);
-        company.addToArray(bogdan4);
-        company.addToArray(bogdan5);
-        company.addToArray(bogdan);
-        company.addToArray(bogdan1);
-        company.addToArray(bogdan2);
-        company.addToArray(bogdan3);
-        company.addToArray(bogdan4);
-        company.addToArray(bogdan5);
+        company.addToArray(bogdan);                 //Add to Company(array) object Person object
+        company.addToArray(bogdan1);                //Add to Company(array) object Person object
+        company.addToArray(bogdan2);                //Add to Company(array) object Person object
+        company.addToArray(bogdan3);                //Add to Company(array) object Person object
+        company.addToArray(bogdan4);                //Add to Company(array) object Person object
+        company.addToArray(bogdan5);                //Add to Company(array) object Person object
+        company.addToArray(bogdan);                 //Add to Company(array) object Person object
+        company.addToArray(bogdan1);                //Add to Company(array) object Person object
+        company.addToArray(bogdan2);                //Add to Company(array) object Person object
+        company.addToArray(bogdan3);                //Add to Company(array) object Person object
+        company.addToArray(bogdan4);                //Add to Company(array) object Person object
+        company.addToArray(bogdan5);                //Add to Company(array) object Person object
 
-        company1.addToArray(bogdan4);
-        company1.addToArray(bogdan1);
-        company1.addToArray(bogdan2);
-        company1.addToArray(bogdan3);
-        company1.addToArray(bogdan4);
-        company1.addToArray(bogdan5);
-        company1.addToArray(bogdan);
-        company1.addToArray(bogdan1);
-        company1.addToArray(bogdan2);
-        company1.addToArray(bogdan3);
-        company1.addToArray(bogdan4);
-        company1.addToArray(bogdan5);
+        company1.addToArray(bogdan4);               //Add to Company(array) object Person object
+        company1.addToArray(bogdan1);               //Add to Company(array) object Person object
+        company1.addToArray(bogdan2);               //Add to Company(array) object Person object
+        company1.addToArray(bogdan3);               //Add to Company(array) object Person object
+        company1.addToArray(bogdan4);               //Add to Company(array) object Person object
+        company1.addToArray(bogdan5);               //Add to Company(array) object Person object
+        company1.addToArray(bogdan);                //Add to Company(array) object Person object
+        company1.addToArray(bogdan1);               //Add to Company(array) object Person object
+        company1.addToArray(bogdan2);               //Add to Company(array) object Person object
+        company1.addToArray(bogdan3);               //Add to Company(array) object Person object
+        company1.addToArray(bogdan4);               //Add to Company(array) object Person object
+        company1.addToArray(bogdan5);               //Add to Company(array) object Person object
 
-        company.outputArray();
+        company.outputArray();                      //Output full Company(array) information
         System.out.println(" ");
-        company1.outputArray();
+        company1.outputArray();                     //Output full Company(array) information
 
-        System.out.println(company.equals(company1));
+        System.out.println(company.equals(company1));   //Check two arrays equals
 
 
     }
