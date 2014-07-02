@@ -1,13 +1,8 @@
 package secondTask;
 
-import org.junit.Before;
-import org.junit.Test;
+/**public class InnerUnionTest {
 
-import static org.junit.Assert.assertArrayEquals;
-
-public class InnerUnionTest {
-
-    private InnerUnion testClass;
+   private InnerUnion testClass;
 
     @Before
     public void setup(){
@@ -109,4 +104,4 @@ public class InnerUnionTest {
 
 
     }
-}
+} **/

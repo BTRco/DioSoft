@@ -2,14 +2,14 @@ package firstTask;
 
 public class Main {
 
-    public static void main(String[] args) {
+   /** public static void main(String[] args) {
 
-        Person bogdan = new Person("Bogdan", "Kyiv", 23, Post.DIRECTOR);                //Create new Perosn class object
-        Person bogdan1 = new Person("Bogdan", "Kharkiv", 23, Post.DIRECTOR);            //Create new Perosn class object
-        Person bogdan2 = new Person("Bogdan Skochynskyi", "Kyiv", 23, Post.DIRECTOR);   //Create new Perosn class object
-        Person bogdan3 = new Person("Bogdan", "Kyiv", 23, Post.QA);                     //Create new Perosn class object
-        Person bogdan4 = new Person("Bogdan", "Kyiv", 24, Post.DIRECTOR);               //Create new Perosn class object
-        Person bogdan5 = new Person("Bogdan", "Kyiv", 23, Post.DIRECTOR);               //Create new Perosn class object
+        NewPerson bogdan = new NewPerson("Bogdan", "Kyiv", 23, Post.DIRECTOR);                //Create new Perosn class object
+        NewPerson bogdan1 = new NewPerson("Bogdan", "Kharkiv", 23, Post.DIRECTOR);            //Create new Perosn class object
+        NewPerson bogdan2 = new NewPerson("Bogdan Skochynskyi", "Kyiv", 23, Post.DIRECTOR);   //Create new Perosn class object
+        NewPerson bogdan3 = new NewPerson("Bogdan", "Kyiv", 23, Post.QA);                     //Create new Perosn class object
+        NewPerson bogdan4 = new NewPerson("Bogdan", "Kyiv", 24, Post.DIRECTOR);               //Create new Perosn class object
+        NewPerson bogdan5 = new NewPerson("Bogdan", "Kyiv", 23, Post.DIRECTOR);               //Create new Perosn class object
 
         System.out.println(bogdan.equals(bogdan1)); //Check equals false by String "Address"
         System.out.println(bogdan.equals(bogdan2)); //Check equals false by String "Name"
@@ -66,5 +66,5 @@ public class Main {
         System.out.println(company.equals(company1));   //Check two arrays equals
 
 
-    }
+    } **/
 }

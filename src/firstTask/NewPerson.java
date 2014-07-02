@@ -1,17 +1,17 @@
 package firstTask;
 
-public class Person {
+public class NewPerson {
 
     final private String personName;
     final private String personAddress;
     final private int personAge;
     final private Post personPost;
 
-    public Person(String personName, String personAddress, int personAge, Post personPost) {
-        this.personName = personName;
-        this.personAddress = personAddress;
-        this.personAge = personAge;
-        this.personPost = personPost;
+    private NewPerson(Builder builder) {
+        this.personName = builder.personName;
+        this.personAddress = builder.personAddress;
+        this.personAge = builder.personAge;
+        this.personPost = builder.personPost;
     }
 
     public String getPersonName() {
@@ -36,7 +36,6 @@ public class Person {
                 "personName='" + personName + '\'' +
                 ", personAddress='" + personAddress + '\'' +
                 ", personAge=" + personAge +
-                ", personPost=" + personPost +
                 '}';
     }
 
@@ -79,6 +78,47 @@ public class Person {
 
 
 
+    public static class Builder{
+        private String personName;
+        private String personAddress;
+        private int personAge;
+        private Post personPost;
+
+        public Builder(){
+
+        }
+
+        public Builder(NewPerson original){
+            this.personName = original.personName;
+            this.personAddress = original.personAddress;
+            this.personAge = original.personAge;
+            this.personPost = original.personPost;
+        }
+
+        public Builder personName(String name){
+            this.personName = name;
+            return this;
+        }
+
+        public Builder personAddress(String address){
+            this.personAddress = address;
+            return this;
+        }
+
+        public Builder personAge(int age){
+            this.personAge = age;
+            return this;
+        }
+
+        public Builder personPost(Post post){
+            this.personPost = post;
+            return this;
+        }
+
+        public NewPerson build(){
+            return new NewPerson(this);
+        }
+    }
 
 }
 
